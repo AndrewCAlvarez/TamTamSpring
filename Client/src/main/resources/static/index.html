@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <title>TamTam</title>
+</head>
+<body>
+    <h1>TamTam Financial Tracker</h1>
+    <table>
+        <tbody id="userTable">
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+            </tr>
+        </tbody>
+    </table>
+    <form>
+        <h4>Add User</h4>
+        <title>Name</title>
+        <input id="formNameField" type="text" required="required" placeholder="Name">
+        <title>Email</title>
+        <input id="formEmailField" type="email" required="required" placeholder="Email">
+        <button id="sendButton">Add</button>
+    </form>
+    <form>
+        <h4>Update User</h4>
+        <title>Name</title>
+        <input id="formNameFieldUpdate" type="text" required="required" placeholder="Name">
+        <title>Email</title>
+        <input id="formEmailFieldUpdate" type="text" type="email" required="required" placeholder="Email">
+        <title>id</title>
+        <input id="formIdFieldUpdate" type="text" type="number"" required="required" placeholder="Id">
+        <button id="updateUserButton">Update</button>
+    </form>
+    <form>
+        <h4>Delete User</h4>
+        <title>id</title>
+        <input id="formIdFieldDelete" type="number"" required="required" placeholder="Id">
+        <button id="deleteUserButton">Delete</button>
+    </form>
+
+    <script type="module" src="javascript/app.js"></script>
+</body>
+</html>
