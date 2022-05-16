@@ -5,7 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 class App extends Component {
   state = {
-    clients: []
+    clients: [],
   };
 
   async componentDidMount() {
@@ -28,7 +28,7 @@ class App extends Component {
                   </div>
               )}
             </div>
-            <h1>Styling branch changed again.</h1>
+            <h1>Styling branch take 3</h1>
           </header>
         </div>
     );
