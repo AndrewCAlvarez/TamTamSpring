@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import { Component } from 'react';
-import {Table} from 'reactstrap'
+
 
 class App extends Component {
   state = {
@@ -21,7 +21,7 @@ class App extends Component {
           {/* <header className="App-header">
             <img src={logo} className="App-logo" alt="logo" />
           </header> */}
-          <Table dark>
+          <table>
             <tbody>
               <tr>
                 <td>Name</td>
@@ -34,7 +34,7 @@ class App extends Component {
               </tr>
               )}
             </tbody>
-          </Table>
+          </table>
         </div>
     );
   }
