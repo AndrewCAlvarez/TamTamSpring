@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import { Component } from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import {Table} from 'reactstrap'
 
 class App extends Component {
   state = {
@@ -18,17 +18,23 @@ class App extends Component {
     const {clients} = this.state;
     return (
         <div className="App">
-          <header className="App-header">
+          {/* <header className="App-header">
             <img src={logo} className="App-logo" alt="logo" />
-            <div className="App-intro">
-              <h2>Clients</h2>
-              {clients.map(client =>
-                  <div key={client.id}>
-                    {client.name} ({client.email})
-                  </div>
+          </header> */}
+          <Table dark>
+            <tbody>
+              <tr>
+                <td>Name</td>
+                <td>Email</td>
+              </tr>
+                {clients.map(client => 
+              <tr key={client.id}>
+                  <td>{client.name}</td>
+                  <td>{client.email}</td>
+              </tr>
               )}
-            </div>
-          </header>
+            </tbody>
+          </Table>
         </div>
     );
   }
