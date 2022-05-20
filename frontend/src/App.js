@@ -1,7 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
 import { Component } from 'react';
-
+import styled from 'styled-components';
+import Table from './Components/Table';
 
 class App extends Component {
   state = {
@@ -16,27 +17,23 @@ class App extends Component {
 
   render() {
     const {clients} = this.state;
-    return (
+    
+    const Test = styled.h1`
+      background: #343634;
+      color: white;
+    `;
+
+    if(clients.length == 0){
+      // Do nothing
+    } else {
+      return (
         <div className="App">
-          {/* <header className="App-header">
-            <img src={logo} className="App-logo" alt="logo" />
-          </header> */}
-          <table>
-            <tbody>
-              <tr>
-                <td>Name</td>
-                <td>Email</td>
-              </tr>
-                {clients.map(client => 
-              <tr key={client.id}>
-                  <td>{client.name}</td>
-                  <td>{client.email}</td>
-              </tr>
-              )}
-            </tbody>
-          </table>
+        <Test>Test h1</Test>
+        <Table clients={clients}></Table>
         </div>
     );
+    }
+
   }
 }
 export default App;
