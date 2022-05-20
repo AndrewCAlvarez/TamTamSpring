@@ -47,27 +47,4 @@ public class MainController {
         return userRepository.findAll();
     }
 
-    // @ResponseStatus(HttpStatus.BAD_REQUEST)
-    // @ExceptionHandler(MethodArgumentNotValidException.class)
-    // public Map<String, String>
-    // handleMethodArgumentNotValid(MethodArgumentNotValidException ex) {
-    // Map<String, String> errors = new HashMap<>();
-
-    // ex.getBindingResult().getFieldErrors()
-    // .forEach(error -> errors.put(error.getField(), error.getDefaultMessage()));
-
-    // return errors;
-    // }
-
-    // @GetMapping("/users/{id}")
-    // EntityModel<User> one(@PathVariable Long id) {
-
-    // User user = userRepository.findById(id) //
-    // .orElseThrow(() -> new EmployeeNotFoundException(id));
-
-    // return EntityModel.of(user, //
-    // linkTo(methodOn(User.class).one(id)).withSelfRel(),
-    // linkTo(methodOn(User.class).all()).withRel("employees"));
-    // }
-
 }
