@@ -1,6 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
 import { Component } from 'react';
+import Nav from './Components/Nav';
+import { Outlet, Link} from 'react-router-dom';
 
 
 class App extends Component {
@@ -18,9 +20,9 @@ class App extends Component {
     const {clients} = this.state;
     return (
         <div className="App">
-          {/* <header className="App-header">
-            <img src={logo} className="App-logo" alt="logo" />
-          </header> */}
+          <header>
+            <Nav></Nav>
+          </header> 
           <table>
             <tbody>
               <tr>
@@ -35,6 +37,7 @@ class App extends Component {
               )}
             </tbody>
           </table>
+          <Outlet />
         </div>
     );
   }
