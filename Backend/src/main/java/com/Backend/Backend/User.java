@@ -1,3 +1,5 @@
+// NOTE: This is old code that needs to be removed or reviewed.
+
 package com.Backend.Backend;
 
 import javax.persistence.Entity;

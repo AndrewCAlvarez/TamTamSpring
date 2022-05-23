@@ -1,3 +1,4 @@
+// NOTE: This is old code that needs to be removed or reviewed.
 // REST service using documentation at: 
 // https://www.codejava.net/frameworks/spring-boot/spring-boot-restful-crud-api-examples-with-mysql-database
 
