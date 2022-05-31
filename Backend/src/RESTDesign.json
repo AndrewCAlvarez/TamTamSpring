@@ -1,0 +1,28 @@
+{
+    "Document": {
+        "Title": "RESTDesign.json",
+        "Description": "This is a design document for the TamTam finance and budget tracking app. This should not be used in any code. The app is meant to keep track of three things: Income Statement, Cash Flow Statement, and Balance Sheet."
+    },
+    "user": {
+        "id": "<long>",
+        "username": "<String>",
+        "password": "<String>",
+        "email": "<String>",
+        "income": [],
+        "expenses": []
+        },
+        "income": {
+            "id": "<long>",
+            "label": "<String>",
+            "gain": "float with 2 decimal places",
+            "description": "<String>",
+            "date": "<Date>"
+        },
+        "expense": {
+            "id": "<long>",
+            "label": "<String>",
+            "cost": "float with 2 decimal places",
+            "description": "<String>",
+            "date": "<Date>"
+        }
+}
