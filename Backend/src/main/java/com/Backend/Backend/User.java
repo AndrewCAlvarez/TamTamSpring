@@ -1,45 +1,45 @@
 package com.Backend.Backend;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.validation.constraints.*;
-
-@Entity
 public class User {
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long id;
+    /*
+     * "user": {
+     * "id": "<long>",
+     * "username": "<String>",
+     * "password": "<String>",
+     * "email": "<String>",
+     * "income": [],
+     * "expenses": []
+     * }
+     */
+    private final long id;
+    private final String username;
+    private final String password;
+    private final String email;
 
-    @NotNull
-    @Size(min = 2, message = "Name should contain at least two characters.")
-    private String name;
+    // private final Income[] incomes;
+    // private final Expense[] expenses;
 
-    @Email(message = "Email should be valid.")
-    private String email;
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
+    public User(long id, String username, String password, String email) {
         this.id = id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
+        this.username = username;
+        this.password = password;
+        this.email = email;
     }
 
     public String getEmail() {
         return email;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
+    public String getPassword() {
+        return password;
     }
+
+    public String getUsername() {
+        return username;
+    }
+
+    public long getId() {
+        return id;
+    }
+
 }
